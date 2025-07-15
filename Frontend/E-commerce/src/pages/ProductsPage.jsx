@@ -27,7 +27,7 @@ const ProductsPage = () => {
           query += `search=${encodeURIComponent(search)}`;
         }
 
-        const res = await axios.get(`http://localhost:5000/api/product${query ? `?${query}` : ""}`);
+        const res = await axios.get(`https://e-commerce-3-zogp.onrender.com/api/product${query ? `?${query}` : ""}`);
         setProducts(res.data);
       } catch (err) {
         console.error("Error fetching products:", err);

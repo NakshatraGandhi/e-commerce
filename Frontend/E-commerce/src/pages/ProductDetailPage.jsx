@@ -15,7 +15,7 @@ const ProductDetailPage = () => {
     const fetchProduct = async () => {
       setLoading(true);
       try {
-        const res = await axios.get(`http://localhost:5000/api/product/${id}`);
+        const res = await axios.get(`https://e-commerce-3-zogp.onrender.com/api/product/${id}`);
         setProduct(res.data);
       } catch (err) {
         console.error("Failed to fetch product:", err);

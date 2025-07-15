@@ -4,7 +4,7 @@ import {
   getAuth,
   createUserWithEmailAndPassword,
 } from "firebase/auth";
-import {app} from "../firebase"; // 🔥 import Firebase app
+import {app} from "../firebase"; 
 
 const RegisterPage = () => {
   const auth = getAuth(app);
